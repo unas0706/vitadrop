@@ -14,11 +14,7 @@ const app = express();
 //adding middlewares
 
 app.use(cookieParser());
-app.use(
-  cors({
-    credentials: true,
-  })
-);
+app.use(cors());
 app.use(express.json());
 
 app.use(userRouter);
