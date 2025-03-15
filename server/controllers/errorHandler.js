@@ -56,7 +56,6 @@ const errorHandler = (err, req, res, next) => {
     msg = "Invalid Token. Please log in again";
     sc = 401;
   }
-  console.log(err);
 
   res.status(sc).json({
     succes: false,

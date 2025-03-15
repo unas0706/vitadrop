@@ -15,6 +15,8 @@ export const verifyNumber = asyncErrorHandler(async (req, res, next) => {
   const authToken = process.env.TWILIO_AUTH_TOKEN;
   const client = twilio(accountSid, authToken);
   const otp = Math.floor(Math.random() * 1000000);
+  console.log("Twilio SID:", process.env.TWILIO_ACCOUNT_SID);
+  console.log("Twilio Token:", process.env.TWILIO_AUTH_TOKEN);
 
   await client.messages.create({
     body: `Your OTP code is: ${otp}`,
