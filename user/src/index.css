@@ -288,7 +288,7 @@ html {
   text-align: center;
 }
 .Blood {
-  background: url("medicine.png");
+  background: url("../medicine.png");
   background-size: 100% 100%;
   display: flex;
   justify-content: center;
